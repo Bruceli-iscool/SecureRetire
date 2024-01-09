@@ -6,11 +6,11 @@ def working_years(years, retirementyears):
     return int(work_years)
 
 def final_income(income):
-    total_income = working_years * int(income)
+    total_income = working_years * income
     return int(total_income)
 
 def expenses(expensesf, yearsaterretirement):
-    expense_before = int(expensesf) * (1.02**int(yearsaterretirement))
+    expense_before = int(expensesf) * (1.02**yearsaterretirement)
     expenses_work = expense_before + expensesf * (1.02 **working_years)
     return int(expenses_work)
 def social_security(eachyear, retirementyears):
